@@ -1,5 +1,8 @@
 # game.py
 
+#Imports
+ import random
+
 print("Rock, Paper, Scissors, Shoot!")
 
 
@@ -13,15 +16,21 @@ print(x)
 
 
 # Validate user input
-
+if x=="rock" or (x== "paper") or (x=="scissors"):
+    print("Valid")
+else:
+    print("Oops, invalid, please try again")
+    exit()
 
 
 
 # Generate computer choice
+valid_options =  ["rock", "paper", "scissors"]
+
+c = random.choice(valid_options)
+print(random.choice(valid_options))
  
- 
- 
- 
+ print("Computer Choice")
  
 # Determine Winner
 
