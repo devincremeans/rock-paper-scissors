@@ -1,7 +1,7 @@
 # game.py
 
 #Imports
- import random
+import random
 
 print("Rock, Paper, Scissors, Shoot!")
 
@@ -22,15 +22,14 @@ else:
     print("Oops, invalid, please try again")
     exit()
 
-
+print("User Choice", x)
 
 # Generate computer choice
 valid_options =  ["rock", "paper", "scissors"]
 
 c = random.choice(valid_options)
-print(random.choice(valid_options))
- 
- print("Computer Choice")
+
+print("Computer Choice", c)
  
 # Determine Winner
 
