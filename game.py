@@ -32,6 +32,28 @@ c = random.choice(valid_options)
 print("Computer Choice", c)
  
 # Determine Winner
+# 1. Rock > Scissors
+# 2. Paper > Rock
+# 3. Scissors > Paper
+# 4. Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
+# Source: https://docs.python.org/3/tutorial/controlflow.html#if-statements
+
+if x =="rock" and c =="scissors":
+    print("User Won") 
+elif x=="Paper" and c=="Rock":
+    print("User Won")
+elif x== "scissors" and c == "paper":
+    print("User Won")
+elif x == c:
+    print("Tie")
+else:
+    print("Computer Won")
+
+
+
+
+
+
 
 
 
