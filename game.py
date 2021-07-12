@@ -3,16 +3,13 @@
 #Imports
 import random
 
-print("Rock, Paper, Scissors, Shoot!")
-
+print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 
 
 # Ask for a user input
 # Source: https://www.w3schools.com/python/ref_func_input.asp
 x = input("Please choose one of 'rock', 'paper', 'scissors'")
 print(x)
-
-
 
 
 # Validate user input
@@ -22,14 +19,14 @@ else:
     print("Oops, invalid, please try again")
     exit()
 
-print("User Choice", x)
+print("You chose:", x)
 
 # Generate computer choice
 valid_options =  ["rock", "paper", "scissors"]
 
 c = random.choice(valid_options)
 
-print("Computer Choice", c)
+print("The compuer chose:", c)
  
 # Determine Winner
 # 1. Rock > Scissors
@@ -38,16 +35,21 @@ print("Computer Choice", c)
 # 4. Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
 # Source: https://docs.python.org/3/tutorial/controlflow.html#if-statements
 
+w = ("You Won! Congrats!")
+
 if x =="rock" and c =="scissors":
-    print("User Won") 
+    print(w) 
 elif x=="Paper" and c=="Rock":
-    print("User Won")
+    print(w)
 elif x== "scissors" and c == "paper":
-    print("User Won")
+    print(w)
 elif x == c:
     print("Tie")
 else:
-    print("Computer Won")
+    print("Oh, the computer won. It's ok")
+
+print("-------------------")
+print("Thanks for playing. Please play again!")
 
 
 
