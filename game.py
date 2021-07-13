@@ -3,8 +3,16 @@
 #Imports
 import random
 
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+USER_NAME = os.getenv("USER_NAME")
+print(USER_NAME)
+# Source: https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/packages/dotenv.md
+
+print("Welcome",USER_NAME,"to my Rock-Paper-Scissors game...")
 
 # Ask for a user input
 # Source: https://www.w3schools.com/python/ref_func_input.asp
