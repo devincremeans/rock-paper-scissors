@@ -2,8 +2,8 @@
 
 Inpur your name in the .env file
 
-*Input Rock, 
-*Paper, 
-*or Scissors.
+* Input Rock, 
+* Paper, 
+* or Scissors.
 
 Play again!

@@ -57,7 +57,7 @@ else:
     print("Oh, the computer won. It's ok")
 
 print("-------------------")
-print("Thanks for playing. Please play again!")
+print("Thanks for playing",USER_NAME," -- Please play again!")
 
 
 
