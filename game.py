@@ -19,6 +19,8 @@ print("Welcome",USER_NAME,"to my Rock-Paper-Scissors game...")
 x = input("Please choose one of 'rock', 'paper', 'scissors'")
 print(x)
 
+x = x.lower()
+print(x)
 
 # Validate user input
 if x=="rock" or (x== "paper") or (x=="scissors"):
